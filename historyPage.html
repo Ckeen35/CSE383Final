@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+        <title>History Search</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="historyStyles.css">
+        <script src="history.js?2"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"               integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="               crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776; Menu</span>
+        <div id="sideMenu" class="menu">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="infoPage.html">Info</a>
+                <a href="zipPage.html">Zip Search</a>
+                <a href="forecast.html">Forecast</a>
+                <a href="historyPage.html">History</a>
+        </div>
+
+	<div class="center">
+		<form style="text-align:center;margin-bottom:20px;" id="inpt">
+			<h3>Date: </h3>
+			<input type="text" id="reqDate" name="reqDate" style="width:150px;" placeholder="YYYY-MM-DD">
+			<h3>Sort By: </h3>
+			<select name="sort" id="sort">
+				<option value="1">Zip Code</option>
+				<option value="2">Date Requested</option>
+			</select><br><br>
+			<input type="button" onclick="getHistory();" class="button" value="Submit">
+		</form>
+		<div style="background-color:rgba(0, 50, 0, 0.7);padding-left:10px;">
+		        <h5 class="header">Location:&emsp;&emsp;Date:&emsp;&emsp;&emsp;&emsp;Date Requested:&emsp;&emsp;Low:&emsp;&emsp;High:&emsp;&emsp;Forecast:
+			<p style="font-size:13px;" id="tempList"></p>
+		</div>
+	</div>
+</body>
+</html>
+

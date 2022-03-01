@@ -1,0 +1,87 @@
+.menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #0a290a;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+}
+
+.menu a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+}
+
+.menu a:hover {
+        color: #f1f1f1;
+}
+
+.menu .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+        .menu {padding-top: 15px;}
+        .menu a {font-size: 18px;}
+}
+
+.center {
+        max-width: 525px;
+        margin: auto;
+}
+
+h3 {
+        color: white;
+        font-size: 50 px;
+}
+
+h5 {
+        color: white;
+}
+
+body {
+        background-image: url("https://images.unsplash.com/photo-1473773508845-188df298d2d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1867&q=80");
+	background-size: cover;
+}
+
+label {
+	color: white;
+}
+
+ul, li {
+	color: white;
+}
+
+.button {
+        background-color: white;
+        border: none;
+        color: green;
+        padding: 15px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 10px;
+        cursor: pointer;
+}
+
+.button:hover {
+        background-color: gray;
+}
+
+.header {
+	color: white;
+}
+

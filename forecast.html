@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Forecast</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="forecastStyles.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"               integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="               crossorigin="anonymous"></script>
+        <script src="forecastPage.js?2"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+        <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776; Menu</span>
+        <div id="sideMenu" class="menu">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="infoPage.html">Info</a>
+                <a href="zipPage.html">Zip Search</a>
+                <a href="forecast.html">Forecast</a>
+                <a href="historyPage.html">History</a>
+        </div>
+
+	<div class="center">
+                <form>
+                       	<h2>Enter Zip Code:</label><br>
+                       	<input type="text" id="zip" name="zip" style="width:160px;"><br>
+                       	<input type="button" onclick="getForecast();" class="button" value="Submit">
+               	</form>
+		<div style="background-color:rgba(0, 50, 0, 0.7);">
+			<h3 id="ttl">Forecast:</h3>
+                	<table style="width:100%;text-align:center;">
+				<thead><tr><th>Day</th><th>High(°F)</th><th>Low(°F)</th><th>Description</th><th></th></tr></thead>
+				<tbody>
+					<tr><td id="date1">-</td><td id="hi1">-</td><td id="lo1">-</td><td id="desc1">-</td><td style="text-align:left;" id="pic1"></td></tr>
+					<tr><td id="date2">-</td><td id="hi2">-</td><td id="lo2">-</td><td id="desc2">-</td><td style="text-align:left;" id="pic2"></td></tr>
+					<tr><td id="date3">-</td><td id="hi3">-</td><td id="lo3">-</td><td id="desc3">-</td><td style="text-align:left;" id="pic3"></td></tr>
+                               		<tr><td id="date4">-</td><td id="hi4">-</td><td id="lo4">-</td><td id="desc4">-</td><td style="text-align:left;" id="pic4"></td></tr>
+					<tr><td id="date5">-</td><td id="hi5">-</td><td id="lo5">-</td><td id="desc5">-</td><td style="text-align:left;" id="pic5"></td></tr>
+                                	<tr><td id="date6">-</td><td id="hi6">-</td><td id="lo6">-</td><td id="desc6">-</td><td style="text-align:left;" id="pic6"></td></tr>
+					<tr><td id="date7">-</td><td id="hi7">-</td><td id="lo7">-</td><td id="desc7">-</td><td style="text-align:left;" id="pic7"></td></tr>
+				</tbody>
+               		</table>
+       		</div>
+	</div>
+</body>
+</html>

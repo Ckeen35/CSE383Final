@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zip Search</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="zipStyles.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"               integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="               crossorigin="anonymous"></script>
+	<script src="zipPage.js?rev=2"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776; Menu</span>
+        <div id="sideMenu" class="menu">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="infoPage.html">Info</a>
+                <a href="zipPage.html">Zip Search</a>
+                <a href="forecast.html">Forecast</a>
+                <a href="historyPage.html">History</a>
+        </div>
+	
+	<div class="center">
+		<form action="" id="myForm">
+			<h2>Enter Zip Code:</label><br>
+			<input type="text" id="zip" name="zip" style="width:160px;"><br>
+			<input type="button" onclick="getInfo();" class="button" value="Submit">
+		</form>
+		<br><br>
+		<table style="background-color:rgba(0, 50, 0, 0.7);">
+        	    	<tbody>
+              			<tr><td>Zip Code:</td><td id='zipCode'>&nbsp;</td></tr>
+            			<tr><td>City:</td><td id='city'>&nbsp;</td></tr>
+              			<tr><td>State:</td><td id='state'>&nbsp;</td></tr>
+              			<tr><td>Latitude:</td><td id='lat'>&nbsp;</td></tr>
+              			<tr><td>Longitude:</td><td id='long'>&nbsp;</td></tr>
+				<tr><td>Time Zone:</td><td id='timeZone'>&nbsp;</td></tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>
